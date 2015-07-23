@@ -1,0 +1,162 @@
+.contenidoPrincipal > h3{
+	text-align: center;
+}
+
+.detallesEvento > h3{
+	text-align: center;
+	margin-top: 0px;
+}
+
+/*
+.imagenEvento{
+	width: 20%;
+	width:150px;
+    margin:0 auto;
+    border:1px solid blue;
+    overflow:hidden;
+}*/
+
+.imagenEvento>div{
+    display:inline-block;
+    vertical-align:middle;
+    /*width:49%;*/
+}
+
+.imagenEvento>div {
+	vertical-align: middle;
+}
+
+.imagenEvento img {
+	/*width: 20%;
+	vertical-align: middle;*/
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.evento {
+	overflow: hidden;
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 10px;
+	border-radius: 6px;
+	box-shadow: 5px 5px 7px grey;
+	vertical-align: middle;
+}
+
+.hoverEvento{
+	opacity: 0.7;
+}
+
+.detallesEvento{
+	height: 100%;
+    margin: 10px;
+    padding: 10px;
+    width: 75%;
+}
+
+.imagenEvento, .detallesEvento, .datosEvento, #detalles {
+	/*float: left;*/
+    vertical-align: middle;
+	display: inline-block;
+}
+
+.datosEvento {
+	display: inline-block;
+	margin: 0 auto;
+    width: 80%;
+    font-size: 20px;
+}
+
+#detalles {
+    margin-top: 50px;
+    /*width: 20%;*/
+}
+
+.datos div {
+    /*float: left;*/
+    margin: 5px;
+    display: inline-block;
+    /*width: 29%;*/
+}
+
+.precio{
+	font-size: 300%;
+	text-align: right;
+	float: right;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+}
+
+.pagination {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+#sin_resultados {
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+#next,
+#prev {
+    color: #337AB7;
+    font: normal bold 1em Arial,sans-serif;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+    padding: 0em 1.5em
+}
+
+#next { text-align: right }
+
+#next:before,
+#next:after,
+#prev:before,
+#prev:after {
+    background: #337AB7;
+    border-radius: 0.25em;
+    content: "";
+    display: block;
+    height: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1em;
+}
+
+#prev:before,
+#prev:after { left: 0 }
+
+#next:before,
+#prev:before {
+    transform: rotate(45deg);
+}
+
+#next:after,
+#prev:after {
+    transform: rotate(-45deg);
+}
+
+#prev:after,
+#next:before { margin-top: -.36em }
+
+#next:hover,
+#next:focus,
+#prev:hover,
+#prev:focus { color: #2E6DA4 }
+
+#next:hover:before,
+#next:hover:after,
+#next:focus:before,
+#next:focus:after,
+#prev:hover:before,
+#prev:hover:after,
+#prev:focus:before,
+#prev:focus:after { background: #2E6DA4 }
+

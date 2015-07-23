@@ -1,0 +1,73 @@
+#oferta {
+	margin: auto;
+}
+
+#title {
+	text-align: center;
+}
+
+.float_items {
+	margin: 10px;
+	width: 90%;
+	float: left;
+	clear: both;
+}
+
+.campo {
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+	vertical-align: middle;
+	width: 20%;
+	float: left;
+	clear: left;
+}
+
+.campo_rellenar {
+	width: 55%;
+	float: left;
+	clear: right;
+	margin-right: 10px;
+}
+
+.msgError{
+	color: red;
+    font-weight: normal;
+    margin: 5px;
+    opacity: 0;
+}
+
+.float_items span{
+	color: red;
+}
+
+.entrada {
+	font-size: 16px;
+	width: 30em;
+}
+
+.boton_formulario {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	margin-right: 10%;
+	margin-top: 2%;
+	padding: 15px;
+	border: none;
+	background-color: #337AB7;
+	color: white;
+	border-radius: 6px;
+	box-shadow: 5px 5px 7px grey;
+	word-wrap: break-word;
+	overflow: auto;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.boton_formulario:hover {
+   background-color: #2E6DA4;
+   color: white;
+}

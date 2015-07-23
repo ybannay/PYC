@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+	{% block content %}
+	<link rel="stylesheet" type="text/css" href="/static/css/style_listado_mis_actividades.css">
+		<h3>Mis ofertas creadas</h3>
+			{% if record_ocio != null %}
+				<h4>Ocio</h4>
+			{% endif %}
+			{% for i in record_ocio %}
+				<div class="evento">
+					<div class="imagenEvento">
+						<img src="../../static/images/{{i.Imagen}}">
+					</div>
+					<div class="detallesEvento">
+						<h3>{{i.Titulo}}</h3>
+						<div class="datosEvento">
+							<p>Ciudad: {{i.Ciudad}}</p>
+							<p>Dirección: {{i.Direccion}}</p>
+							<p>Hora: {{i.Hora}}</p>
+						</div>
+
+						<div class="precio">
+							{{i.Precio}}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+
+			{% if record_viv != null %}
+				<h4>Vivienda</h4>
+			{% endif %}
+			{% for i in record_viv %}
+				<div class="evento">
+					<div class="imagenEvento">
+						<img src="../../static/images/{{i.Imagen}}">
+					</div>
+
+					<div class="detallesEvento">
+						<h3>{{i.Titulo}}</h3>
+						<div class="datosEvento">
+							<p>Ciudad: {{i.Ciudad}}</p>
+							<p>Dirección: {{i.Direccion}}</p>
+							<p>Num. Habitaciones: {{i.NumHab}}</p>
+						</div>
+
+						<div class="precio">
+							{{i.Precio}}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+
+
+			{% if record_emp != null %}
+				<h4>Empleo</h4>
+			{% endif %}
+			{% for i in record_emp %}
+			<h4>Empleo</h4>
+				<div class="evento">
+					<div class="imagenEvento">
+						<img src="../../static/images/{{i.Imagen}}">
+					</div>
+
+					<div class="detallesEvento">
+						<h3>{{i.Titulo}}</h3>
+						<div class="datosEvento">
+							<p>Ciudad: {{i.Ciudad}}</p>
+							<p>Periodo: {{i.Periodo}}</p>
+						</div>
+
+						<div class="precio">
+							{{i.Sueldo}}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+
+		<br></br>
+	{% endblock %}
+

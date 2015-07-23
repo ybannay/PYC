@@ -1,0 +1,80 @@
+h4 {
+	margin-top: 5%;
+	font-weight: bold;
+}
+
+.detallesEvento > h3{
+	text-align: center;
+	margin-top: 0px;
+}
+
+
+.imagenEvento>div{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.imagenEvento img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.evento {
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 10px;
+	vertical-align: middle;
+	overflow: visible;
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 6px;
+	box-shadow: 5px 5px 7px grey;
+	word-wrap: break-word;
+	overflow: auto;
+}
+
+.hoverEvento{
+	opacity: 0.7;
+}
+
+.detallesEvento{
+	height: 100%;
+    margin: 10px;
+    padding: 10px;
+    width: 75%;
+}
+
+.imagenEvento, .detallesEvento, .datosEvento, #detalles {
+	/*float: left;*/
+    vertical-align: middle;
+	display: inline-block;
+}
+
+.datosEvento {
+	display: inline-block;
+	margin: 0 auto;
+    width: 80%;
+    font-size: 20px;
+}
+
+#detalles {
+    margin-top: 50px;
+    /*width: 20%;*/
+}
+
+.datos div {
+    /*float: left;*/
+    margin: 5px;
+    display: inline-block;
+    /*width: 29%;*/
+}
+
+.precio{
+	font-size: 300%;
+	text-align: right;
+	float: right;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plan Your City - Login</title>
+	<meta charset="UTF-8">
+	<link href="../static/css/style_login.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../static/js/login.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+<body>
+	<div id="main">
+		<h1 id="title">Plan Your City</h1>
+		<div id="login">
+			<h3 id="login-title">Log In</h3>
+			<div id="login-content">
+				<p>Conéctate a través de tu cuenta de Google+:</p>
+				<div id="google-button">
+					{% if user and not user.is_anonymous %}
+						<meta http-equiv="refresh" content="0; url=http://localhost:8000/index" />
+					{% else %}
+					<div id="customBtn" onclick="signInGoogle()" class="customGPlusSignIn">
+   						<span class="icon"></span>
+    					<span class="buttonText">Google+</span>
+    					<script>
+							function signInGoogle() {
+							    window.location.assign("{% url 'social:begin' 'google-oauth2' %}?next={{request.path}}index/");
+							}
+						</script>
+
+  					</div>
+					{% endif %}
+				</div>
+				<p id="nota">Nota: Para usar nuestra aplicación necesitas una cuenta de Google+. Puedes crearte una <a href="https://accounts.google.com/signup?hl=es">aquí</a>.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html> 
